@@ -1,0 +1,1 @@
+There is a concept of web packs in React JS , which means that import & export files concept is actually called as web packs

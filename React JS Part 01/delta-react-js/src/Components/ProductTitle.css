@@ -1,0 +1,27 @@
+.container button {
+  width: 100%;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.container {
+  justify-content: center;
+}
+
+.container h2 {
+  border: 3px solid green;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.container h3 {
+  background: black;
+  border-radius: 10px;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+  width: 100%;
+}

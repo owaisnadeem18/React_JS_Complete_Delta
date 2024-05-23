@@ -1,0 +1,7 @@
+There are three following rules to write JSX:  
+
+1. We could not return more than one root element 
+
+2. Closing all the tags is a must in JSX (because when JSX's code is converted by "Babble" into JS , then it is compulsory for Babble to have the tags which are having a cloing tag
+
+3. camelCase most of the things     

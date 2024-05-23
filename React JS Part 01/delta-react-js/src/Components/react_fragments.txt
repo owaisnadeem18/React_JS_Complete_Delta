@@ -1,0 +1,5 @@
+The next thing is called as react fragments 
+
+<>
+    (Any Thing which is wrapped inside these brackets , are called as components enclosed or wrapped inside the react fragments)
+</>

@@ -1,0 +1,1 @@
+Whenever we use curly bracket inside the JSX , it means that we can use the JS Inside our curly bracket in the JSX , we can write pure JS inside the curly brackets of components of jsx
