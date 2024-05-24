@@ -1,0 +1,11 @@
+.old-prices {
+  text-decoration-color: red;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 3px;
+  font-size: 2rem;
+}
+
+.new-prices {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
