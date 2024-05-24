@@ -1,0 +1,1 @@
+We can also render our html elements , using array . The most frequent way of doing this task is to use the map method on the data of our array , or we can also do it indivisually

@@ -1,0 +1,2 @@
+Here, we have to look at the concept of Conditionals in React JS . Ternary opeators are used to check any condition in React JS , we will take different kind of actions on the basis of our results of ternary operator
+

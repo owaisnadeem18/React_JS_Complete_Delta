@@ -1,0 +1,12 @@
+Props in React JS are called as the information which we pass to our JSX tag
+
+component render means when we are calling a component
+
+props are actually the objects in REACT JS 
+
+Tips: A number could also be pass through the props as the form of data , but we have to use {} to pass the number data as props 
+
+Till yet i.e video # 01 of JS Delta Part 02 , we have studied that we can collectively pass strings & numbers from our react components as the props . 
+
+Now , from video 02 We will understand that how an array & object can be passed as the props
+

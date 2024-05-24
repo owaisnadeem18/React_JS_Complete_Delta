@@ -1,0 +1,1 @@
+Here , we have to talk about , how we can add styling in our jSX component on the basis of conditions , that for example if any specific condition is getting true than we are giving some specific color to our any component

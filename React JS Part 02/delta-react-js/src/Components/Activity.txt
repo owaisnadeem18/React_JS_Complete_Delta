@@ -1,0 +1,2 @@
+Here , we have an activity to master the concepts of dynamic styling & props in react JS
+
