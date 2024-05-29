@@ -1,0 +1,9 @@
+There are too many events in JavaScript for mouse and for our keyboard ,let's have a look at some of the following 
+
+1. Mouse hover event
+2. Mouse focus in event
+3. Mouse focus out event
+4. click event
+5. double click event
+6. Mouse out event 
+

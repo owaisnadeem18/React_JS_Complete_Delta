@@ -1,0 +1,7 @@
+The 03 important pillars of react JS are as follows as a beginner 
+
+1. Components
+2. Props 
+3. Hooks 
+
+States in react js are used to re render our component whenever we perform any changes inside our component

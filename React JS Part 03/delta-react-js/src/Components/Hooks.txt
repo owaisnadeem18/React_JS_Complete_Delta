@@ -1,0 +1,2 @@
+Hooks are of different types and these can be used in react js , in order to perform any kind of operations in React JS. They are used to perform some additional operations inside our react componenets . 
+
