@@ -97,7 +97,7 @@ const Todo = () => {
       <button onClick={Convert_Upper_Case}>Convert in Upper Case</button>
       <br></br>
       <br></br>
-      <button onClick={Convert_Lower_Case}>Convert in Upper Case</button>
+      <button onClick={Convert_Lower_Case}>Convert in Lower Case</button>
     </>
   );
 };
