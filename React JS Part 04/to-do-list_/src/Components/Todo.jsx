@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const Todo = () => {
   const [todoTasks, SettodoTasks] = useState([
-    { task: "Sample task", id: uuidv4() },
+    { task: "Sample task", id: uuidv4(), isCompleted: false },
   ]);
 
   const [NewTodo, SetNewTodo] = useState("");
@@ -11,7 +11,7 @@ const Todo = () => {
   const AddnewTask = () => {
     // SettodoTasks([...todoTasks, todoTasks]);
     SettodoTasks((prevVal) => {
-      return [...prevVal, { task: NewTodo, id: uuidv4() }];
+      return [...prevVal, { task: NewTodo, id: uuidv4(), isCompleted: false }];
     });
     // SetNewTodo("");
     SetNewTodo("");
@@ -65,6 +65,40 @@ const Todo = () => {
     );
   };
 
+  const DoneTask = () => {
+    console.log("Task Done ");
+    SettodoTasks(
+      todoTasks.map((item) => {
+        return {
+          ...item,
+          isCompleted: true,
+        };
+      })
+    );
+  };
+
+  const AllDone = () => {
+    SettodoTasks(
+      todoTasks.map((item) => {
+        return {
+          ...item,
+          isCompleted: true,
+        };
+      })
+    );
+  };
+
+  const AllNonDone = () => {
+    SettodoTasks(
+      todoTasks.map((item) => {
+        return {
+          ...item,
+          isCompleted: false,
+        };
+      })
+    );
+  };
+
   return (
     <>
       <input
@@ -83,13 +117,24 @@ const Todo = () => {
         {todoTasks.map((item) => {
           return (
             <li style={{ listStyle: "none" }} key={item.id}>
-              <span> {item.task} </span>
+              <span
+                style={
+                  item.isCompleted ? { textDecorationLine: "line-through" } : {}
+                }
+              >
+                {" "}
+                {item.task}{" "}
+              </span>
               &nbsp;
               <button onClick={() => DeleteTask(item.id)}>Delete</button>
               &nbsp; &nbsp;
               <button onClick={() => UpperCase_One(item.id)}>
                 Upper Case One
               </button>
+              &nbsp; &nbsp;
+              <button onClick={() => DoneTask()}>Done</button>
+              <br />
+              <br />
             </li>
           ); // you should must return it by writing the return keyword , or use () these brackets
         })}
@@ -98,6 +143,8 @@ const Todo = () => {
       <br></br>
       <br></br>
       <button onClick={Convert_Lower_Case}>Convert in Lower Case</button>
+      <button onClick={AllDone}>Mark All as Done ...</button>
+      <button onClick={AllNonDone}>Mark All as UnDone ...</button>
     </>
   );
 };
